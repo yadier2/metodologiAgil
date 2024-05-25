@@ -41,6 +41,11 @@ public class AgileMethodologyController {
 		return "my-scrum";
 	}
 	
+	@GetMapping("my-xp")
+	public String verPaginaXp(Model modelo) {
+		return "my-xp";
+	}
+	
 	@GetMapping("/find-methodology")
 	public String verPaginaEncontrarMetodAgil(Model modelo) {
 		return "find-methodology";

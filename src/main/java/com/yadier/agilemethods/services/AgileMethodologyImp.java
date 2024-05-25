@@ -62,7 +62,7 @@ public class AgileMethodologyImp implements AgileMethodologyService {
 
 		        System.out.println("La metodología ideal para este proyecto es: " + metodologiaIdeal);
 		       
-	            Thread.sleep(4000); 
+	            Thread.sleep(1000); 
 	        } catch (InterruptedException e) {
 	            
 	            e.printStackTrace();
@@ -79,26 +79,25 @@ public class AgileMethodologyImp implements AgileMethodologyService {
 		
 		if(metodologia.equals(scrum)) {
 			 nombre = "Scrum";
-			  descripcion = "¡Felicidades! Basándonos en tus respuestas, hemos determinado que la metodología ágil  más adecuada para tu proyecto es Scrum. \r\n"
-			  		+ "				  Scrum es una metodología centrada en equipos autogestionados y entregas incrementales.";
+			  descripcion = "Scrum es una metodología centrada en equipos autogestionados y entregas incrementales.";
 		        image = "/images/scrum1.png";
 		        url = "/my-scrum";
 		}
 		
-		if(metodologia.equals(xp)) {
+		else if(metodologia.equals(xp)) {
 			 nombre = "Extreme Programming (XP)";
-			  descripcion = "¡Felicidades! Basándonos en tus respuestas, hemos determinado que la metodología ágil  más adecuada para tu proyecto es Extreme Programming (XP).  \r\\n"
-			  		+ "La metodología XP es un conjunto de técnicas que dan agilidad y flexibilidad en la gestión de proyectos. También es conocida como Programación Extrema (Extreme Programming) y se centra crear un producto según los requisitos exactos del cliente.";
-		        image = "extremeProgramming.png";
+			  descripcion ="La metodología XP es un conjunto de técnicas que dan agilidad y flexibilidad en la gestión de proyectos. También es conocida como Programación Extrema (Extreme Programming) y se centra crear un producto según los requisitos exactos del cliente.";
+		        image = "/images/extremeProgramming.png";
 		        url = "/my-xp";
+		}else 
+		{
+		nombre = "Scrum";
+		  descripcion = "Scrum es una metodología centrada en equipos autogestionados y entregas incrementales.";
+	        image = "/images/scrum1.png";
+	        url = "/my-scrum";
 		}
 		
-		if(metodologia.equals(kanban)) {
-			 nombre = "Kanban";
-			  descripcion = "es uan metodologia agil";
-		        image = "scrum.png";
-		        url = "dmetodo/my-kamban";
-		}
+	
 		 ResultMethod resultMethod = new ResultMethod(nombre, descripcion,
 	        		image, url);
 		 

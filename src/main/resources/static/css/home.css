@@ -81,3 +81,15 @@ body {
   .method{
     font-weight: bold;
   }
+
+  @media screen and (max-width: 500px) {
+    body {
+      font-size: 14px; /* Tamaño de texto más pequeño para pantallas menores a 500px */
+    }
+    .texto-grande {
+   
+      font-size: 28px; 
+      font-weight: bold;
+      padding: 10px;
+  }
+  }

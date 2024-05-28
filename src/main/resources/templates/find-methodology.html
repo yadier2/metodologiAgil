@@ -37,7 +37,7 @@
 			<div>
 				<h2 class="texto-grande py-lg-3">Encuentra tu Metodología <span class="clrojo">Ágil</span> </h2>
 			</div>
-			<form id="miFormulario", th:action="@{/choose-methodology}" method="post">
+			<form class="formulario" id="miFormulario" th:action="@{/choose-methodology}" method="post">
                    <div id="errorSer" th:if=${error}>
 						<div name="error" class="alert alert-danger">Error. Pagina Actualizada</div>
 					</div>

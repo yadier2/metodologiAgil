@@ -46,6 +46,23 @@ public class AgileMethodologyController {
 		return "my-xp";
 	}
 	
+	@GetMapping("my-kanban")
+	public String verPaginaKanban(Model modelo) {
+		return "my-kanban";
+	}
+
+	@GetMapping("my-lean")
+	public String verPaginaLean(Model modelo) {
+		return "/my-lean";
+	}
+	
+	@GetMapping("my-crystal")
+	public String verPaginaCrystal(Model modelo) {
+		return "/my-crystal";
+	}
+	
+	
+	
 	@GetMapping("/find-methodology")
 	public String verPaginaEncontrarMetodAgil(Model modelo) {
 		return "find-methodology";

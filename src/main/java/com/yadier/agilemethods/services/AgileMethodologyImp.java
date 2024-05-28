@@ -84,18 +84,34 @@ public class AgileMethodologyImp implements AgileMethodologyService {
 		        url = "/my-scrum";
 		}
 		
-		else if(metodologia.equals(xp)) {
+		 if(metodologia.equals(xp)) {
 			 nombre = "Extreme Programming (XP)";
 			  descripcion ="La metodología XP es un conjunto de técnicas que dan agilidad y flexibilidad en la gestión de proyectos. También es conocida como Programación Extrema (Extreme Programming) y se centra crear un producto según los requisitos exactos del cliente.";
 		        image = "/images/extremeProgramming.png";
 		        url = "/my-xp";
-		}else 
-		{
-		nombre = "Scrum";
-		  descripcion = "Scrum es una metodología centrada en equipos autogestionados y entregas incrementales.";
-	        image = "/images/scrum1.png";
-	        url = "/my-scrum";
 		}
+		
+		if(metodologia.equals(kanban)) {
+			 nombre = "Kanban";
+			  descripcion = "Kanban es una metodología ágil que se enfoca en la gestión visual del flujo de trabajo para mejorar la eficiencia y la productividad.";
+		        image = "/images/kanban.png";
+		        url = "/my-kanban";
+		}
+		
+		if(metodologia.equals(lean)) {
+			 nombre = "Lean Startup";
+			  descripcion ="Lean Startup es una metodología ágil creada por Eric Ries que busca optimizar el desarrollo de negocios y productos a través de ciclos rápidos de experimentación y aprendizaje validado.";
+		      image = "/images/lean.png";
+		        url = "/my-lean";
+		}
+		 
+	 if(metodologia.equals(crystal)) {
+				 nombre = "Crystal";
+				  descripcion ="Crystal es una familia de metodologías ágiles desarrollada por Alistair Cockburn. Es conocida por su enfoque ligero y adaptable, ajustándose a las características específicas del equipo y del proyecto. Crystal se centra en la comunicación, la interacción humana y la entrega continua de software funcional.";
+			      image = "/images/crystal.png";
+			        url = "/my-crystal";
+			}
+		
 		
 	
 		 ResultMethod resultMethod = new ResultMethod(nombre, descripcion,

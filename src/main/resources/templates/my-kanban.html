@@ -10,7 +10,7 @@
 
 	<link th:href="@{/css/home.css}" rel="stylesheet" href="../statics/css/home.css" />
 
-	<title>XP</title>
+	<title>Kanban</title>
 </head>
 <script th:src="@{/js/jquery-3.6.4.js}" src="../statics/js/jquery-3.6.4.js"></script>
 <script th:src="@{/js/bootstrap.js}" src="../statics/js/bootstrap.js"></script>
@@ -36,11 +36,11 @@
 		<section class="py-2">
 			<div class="container py-5">
 				<div class="text-center">
-					<h2 class="texto-grande py-lg-3"><span class="clrojo">Extreme Programming (XP)</span></h2>
+					<h2 class="texto-grande py-lg-3"><span class="clrojo">Kanban</span></h2>
 				</div>
 				<div class="pt-2">
-					<p>Extreme Programming (XP) es una metodología ágil que se centra en la mejora continua, la calidad del software y la colaboración del equipo. 
-						Está diseñada para abordar los desafíos del desarrollo de software de manera flexible y adaptable. A continuación, te ofrecemos una guía para comenzar con Extreme Programming en tu proyecto.</p>
+					<p>Kanban es una metodología ágil que visualiza el trabajo en un tablero Kanban dividido en columnas que representan el flujo de trabajo.
+						 El enfoque está en la mejora continua, la eficiencia y la gestión del flujo de trabajo.</p>
 				</div>
 			</div>
 			<div class="py-5 bg-body-tertiary ">
@@ -52,14 +52,14 @@
 							<div class="card p-4" style="width: 22rem;">
 								<div class="head">
 									<p class="c-num">01</p>
-									<p class="c-title">Equipo XP</p>
+									<p class="c-title">Visualiza el Flujo de Trabajo</p>
 								</div>
 
 								<div class="c-body">
 									<ul>
-										<li class="c-li">Forma un equipo XP multidisciplinario que incluya desarrolladores, testers y clientes.
+										<li class="c-li">Configura un tablero Kanban: Usa una herramienta digital  o un tablero físico.
 										</li>
-										<li>Fomenta la comunicación y la colaboración estrecha entre todos los miembros del equipo.
+										<li>Columnas del tablero: Define las etapas del flujo de trabajo (por ejemplo, "Por hacer", "En progreso", "En revisión", "Hecho").
 
 										</li>
 
@@ -72,14 +72,14 @@
 							<div class="card p-4" style="width: 22rem;">
 								<div class="head">
 									<p class="c-num">02</p>
-									<p class="c-title">Historias de Usuario</p>
+									<p class="c-title">Define las Tareas</p>
 								</div>
 
 								<div class="c-body">
 									<ul>
-										<li class="c-li">Escribe historias de usuario claras y concisas que describan las funcionalidades deseadas desde la perspectiva del usuario.
+										<li class="c-li">Crea tarjetas: Cada tarjeta representa una tarea o una unidad de trabajo.
 										</li>
-										<li>Prioriza las historias de usuario en función del valor que aportan al cliente.</li>
+										<li>Información en las tarjetas: Incluye detalles relevantes como la descripción, el responsable y la fecha límite.</li>
 									</ul>
 								</div>
 
@@ -89,15 +89,15 @@
 							<div class="card p-4" style="width: 22rem;">
 								<div class="head">
 									<p class="c-num">03</p>
-									<p class="c-title">Programación</p>
+									<p class="c-title">Establece Límites de Trabajo en Progreso</p>
 								</div>
 
 								<div class="c-body">
 									<ul>
-										<li class="c-li">Fomenta la programación en parejas, donde dos desarrolladores trabajan juntos en el mismo código.
+										<li class="c-li">Determina los límites de WIP: Define cuántas tareas pueden estar en cada columna al mismo tiempo.
 										</li>
 										<li>
-											Mejora la calidad del código y fomenta el intercambio de conocimientos y la colaboración.
+											Evita la sobrecarga y asegúrate  de que el equipo se enfoque en completar tareas antes de iniciar nuevas.
 										</li>
 									</ul>
 								</div>
@@ -108,15 +108,15 @@
 							<div class="card p-4" style="width: 22rem;">
 								<div class="head">
 									<p class="c-num">04</p>
-									<p class="c-title">Pruebas Unitarias </p>
+									<p class="c-title">Prioriza las Tareas</p>
 								</div>
 
 								<div class="c-body">
 									<ul>
-										<li class="c-li">Escribe pruebas unitarias automatizadas para cada componente del software.
+										<li class="c-li">Ordena las tareas: Prioriza las tarjetas en la columna "Por hacer" según su importancia y urgencia.
 										</li>
 										<li>
-											Utiliza las pruebas unitarias como una herramienta para garantizar la calidad y la integridad del código.
+											Colaboración con el equipo: Asegúrate de que todos los miembros del equipo entiendan las prioridades.
 										</li>
 									</ul>
 								</div>
@@ -127,16 +127,14 @@
 							<div class="card p-4" style="width: 22rem;">
 								<div class="head">
 									<p class="c-num">05</p>
-									<p class="c-title">Integración Continua</p>
+									<p class="c-title">Comienza a Trabajar</p>
 								</div>
 
 								<div class="c-body">
 									<ul>
-										<li class="c-li">Implementa la integración continua para combinar los cambios de código de manera frecuente y automatizada.
+										<li class="c-li">Asignación de tareas: Los miembros del equipo toman las tarjetas de la columna "Por hacer" y las mueven a "En progreso" cuando comienzan a trabajar en ellas.
 										</li>
-										<li>
-											Asegura que el código se compile y se pruebe automáticamente después de cada integración.
-										</li>
+										
 									</ul>
 								</div>
 
@@ -146,12 +144,15 @@
 							<div class="card p-4" style="width: 22rem;">
 								<div class="head">
 									<p class="c-num">06</p>
-									<p class="c-title">Retroalimentación </p>
+									<p class="c-title">Refinamiento Continuo del Proceso</p>
 								</div>
 
 								<div class="c-body">
 									<ul>
-										<li class="c-li">Obtén retroalimentación constante del equipo y los clientes para mejorar continuamente.
+										<li class="c-li">Revisiones periódicas: Realiza reuniones de retrospectiva para discutir lo que funcionó bien y lo que puede mejorar.
+										</li>
+										<li class="c-li">
+											Implementar mejoras: Ajusta las prácticas y el flujo de trabajo basado en la retroalimentación y los datos recopilados.
 										</li>
 									
 									</ul>
@@ -171,37 +172,25 @@
 					<ul>
 						<li class="c-li">Herramientas de Gestión de Proyectos: 
 							<a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a>,
-							<a href="https://trello.com/" target="_blank">Trello</a>,
-							<a href="https://asana.com/es" target="_blank">Asana</a>.
-							
-						</li>
-						<li class="c-li">Integración Continua (CI) : 
-							<a href="https://www.jenkins.io/" target="_blank">Jenkins</a>,
-							<a href="https://circleci.com/" target="_blank">CircleCI</a>
-							
-						</li>
-						<li class="c-li">Desarrollo Guiado por Pruebas (TDD):
-							<a href="https://junit.org/junit5/" target="_blank">JUnit</a>,
-							<a href="https://rspec.info/" target="_blank">RSpec</a>
+							<a href="https://trello.com/" target="_blank">Trello</a>.
 						
+							
 						</li>
+						
 						<li class="c-li">Herramientas de Comunicación:
 							<a href="https://slack.com/intl/es-es" target="_blank">Slack</a>,
 							<a href="https://www.microsoft.com/es-co/microsoft-teams/log-in" target="_blank">Microsoft Teams</a>,
 							<a href="https://zoom.us/es" target="_blank">Zoom</a>.
 						</li>
-						<li class="c-li">Tableros Kanban: Trello, Kanban Tool, Jira.</li>
-
+						
 					</ul>
 				</div>
 				<div class="pt-5">
 					<h4>Recursos Adicionales:</h4>
 					<ul>
-						<li class="c-li">Libro: "Scrum: The Art of Doing Twice the Work in Half the Time" de Jeff
-							Sutherland.
+						<li class="c-li">Libro: "Kanban: Successful Evolutionary Change for Your Technology Business" por David J. Anderson.
 						</li>
-						<li class="c-li">Sitio web: 
-							<a href="https://www.scrum.org/" target="_blank">Scrum.org </a> ofrece recursos valiosos.
+						<li class="c-li">Comunidades: Grupos en LinkedIn y foros como Stack Overflow para discusiones y preguntas sobre Kanban.
 						
 						</li>
 				

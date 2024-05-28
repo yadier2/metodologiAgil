@@ -53,12 +53,12 @@ public class AgileMethodologyController {
 
 	@GetMapping("my-lean")
 	public String verPaginaLean(Model modelo) {
-		return "/my-lean";
+		return "my-lean";
 	}
 	
 	@GetMapping("my-crystal")
 	public String verPaginaCrystal(Model modelo) {
-		return "/my-crystal";
+		return "my-crystal";
 	}
 	
 	
